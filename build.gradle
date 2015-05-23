@@ -5,7 +5,7 @@ buildscript{
 	}
 	
 	dependencies{
-		classpath 'com.github.rzabini:gradle-rst2odt:+'
+		classpath 'com.github.rzabini:gradle-rst2odt:1.0.0'
 	}
 }
 
@@ -16,8 +16,8 @@ apply plugin:'com.github.rzabini.rst2odt'
 task doc(type:rst2odt.Rst2Odt){
 	
 	stylesheet 'src/main/rst/style/styles.odt'
-	sourceFile 'src/main/rst/odtmaster.rst'
-	outputFile "$buildDir/odmaster.odt"
+	sourceFile 'src/main/rst/rest_master.rst'
+	outputFile "$buildDir/rest_master.odt"
 	language "it"
  
 }
